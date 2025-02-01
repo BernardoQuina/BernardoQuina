@@ -4,26 +4,10 @@ Full-stack developer crafting type-safe experiences from frontend to cloud. I bu
 
 ### What I'm about
 
-- 🛠️ Building with **TypeScript**, **React**, **Node.js**, and **AWS**
+- 🛠️ Building with **TypeScript**, **React**, **Node.js**, **AWS** and **Python** (when I really have to)
 - 🏗️ Infrastructure as Code enthusiast (CloudFormation is my second language)
 - 💪 Strong advocate for type safety across the entire stack
 - 🌲 Nature explorer when away from the keyboard
-
-### Tech Stack
-
-```typescript
-const bernardo = {
-  languages: ['TypeScript', 'JavaScript', 'Python'],
-  frontend: ['React', 'Next.js', 'Tailwind'],
-  backend: ['Node.js', 'Express', 'tRPC'],
-  cloud: {
-    aws: ['S3', 'CloudFront', 'Lambda', 'ECS', 'DynamoDB'],
-    tools: ['CloudFormation', 'GitHub Actions', 'Kubernetes'],
-  },
-  architecture: ['Microservices', 'Serverless', 'Event-Driven'],
-  currentlyLearning: 'Algorithms',
-}
-```
 
 ### Certifications
 - [AWS Solutions Architect - Associate](https://www.credly.com/badges/b86e532b-05a8-4827-9881-87cfe809cdd8)
