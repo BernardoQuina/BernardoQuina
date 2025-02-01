@@ -20,3 +20,5 @@ Full-stack developer crafting type-safe experiences from frontend to cloud. I bu
 ### Get in Touch
 - [LinkedIn](https://linkedin.com/in/bernardo-quina)
 - [X](https://x.com/BernardoQuina)
+
+P.S. My contribution graph would be greener if Git tracked my commits to the corporate mainframe 🖥️
