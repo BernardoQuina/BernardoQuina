@@ -4,7 +4,7 @@ Full-stack developer crafting type-safe experiences from frontend to cloud. I bu
 
 ### What I'm about
 
-- 🛠️ Building with **TypeScript**, **React**, **Node.js**, **AWS** and **Python** (when I really have to)
+- 🛠️ Building with **TypeScript**, **React**, **Node.js**, **AWS** (and **Python** when I really have to)
 - 🏗️ Infrastructure as Code enthusiast (CloudFormation is my second language)
 - 💪 Strong advocate for type safety across the entire stack
 - 🌲 Nature explorer when away from the keyboard
