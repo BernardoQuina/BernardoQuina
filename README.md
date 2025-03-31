@@ -14,7 +14,7 @@ Full-stack developer crafting type-safe experiences from frontend to cloud. I bu
 - [Kubernetes Application Developer](https://www.credly.com/badges/135861ce-7d7b-41a7-8005-3871d9bd4466)
 
 ### Latest Projects
-- 🎥 [AI Video Analysis Demo](https://github.com/BernardoQuina/analysis-platform) - AI-driven video analysis using AWS services
+- 🎥 [AI Video Analysis Demo](https://github.com/BernardoQuina/video-analysis-platform) - AI-driven video analysis using AWS services
 - 🌐 [Personal Website](https://github.com/BernardoQuina/personal-website) - Built with Next.js and deployed on AWS
 
 ### Get in Touch
