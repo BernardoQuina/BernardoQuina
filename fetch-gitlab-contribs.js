@@ -1,4 +1,3 @@
-// fetch-gitlab-contribs.js
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 
@@ -8,7 +7,12 @@ const puppeteer = require('puppeteer');
 
   // Navigate to your GitLab activity page
   const url = `https://gitlab.com/users/${username}/activity`;
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox'
+    ]
+  });
   const page = await browser.newPage();
   await page.setViewport({ width: 1200, height: 400 });
   await page.goto(url, { waitUntil: 'networkidle2' });
