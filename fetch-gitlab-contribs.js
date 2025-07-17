@@ -17,11 +17,17 @@ const puppeteer = require('puppeteer');
   await page.setViewport({ width: 1200, height: 400 });
   await page.goto(url, { waitUntil: 'networkidle2' });
 
-  // Wait for the contribution calendar to render
-  await page.waitForSelector('.contrib-calendar');
+  // Wait for the contribution calendar to render (try both selectors, up to 60s)
+  await page.waitForSelector(
+    '[data-qa-selector="contrib_calendar"], .contrib-calendar', 
+    { timeout: 60000 }
+  );
 
   // Screenshot just the calendar element
-  const cal = await page.$('.contrib-calendar');
+  const cal = await page.$(
+    '[data-qa-selector="contrib_calendar"], .contrib-calendar'
+  );
+
   await cal.screenshot({ path: output });
 
   await browser.close();
