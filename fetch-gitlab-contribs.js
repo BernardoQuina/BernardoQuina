@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer');
   const output = 'gitlab-contribs.png';
 
   // Navigate to your GitLab activity page
-  const url = `https://gitlab.com/users/${username}/activity`;
+  const url = `https://gitlab.com/users/${username}`;
   const browser = await puppeteer.launch({
     args: [
       '--no-sandbox',
@@ -17,16 +17,11 @@ const puppeteer = require('puppeteer');
   await page.setViewport({ width: 1200, height: 400 });
   await page.goto(url, { waitUntil: 'networkidle2' });
 
-  // Wait for the contribution calendar to render (try both selectors, up to 60s)
-  await page.waitForSelector(
-    '[data-qa-selector="contrib_calendar"], .contrib-calendar', 
-    { timeout: 60000 }
-  );
-
-  // Screenshot just the calendar element
-  const cal = await page.$(
-    '[data-qa-selector="contrib_calendar"], .contrib-calendar'
-  );
+  // Wait up to 60s for the calendar container
+  await page.waitForSelector('.user-calendar', { timeout: 60000 });
+  
+  // Screenshot just the calendar container
+  const cal = await page.$('.user-calendar');
 
   await cal.screenshot({ path: output });
 
